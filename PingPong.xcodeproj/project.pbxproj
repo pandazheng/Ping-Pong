@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C3096DD1757481D00B879FB /* PPBoardLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3096DC1757481D00B879FB /* PPBoardLayer.m */; };
+		2C3096DF17574D7B00B879FB /* racket.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C3096DE17574D7B00B879FB /* racket.png */; };
+		2C3096E4175775F900B879FB /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C3096E3175775F900B879FB /* ball.png */; };
+		2C343AEA175CC02D00582627 /* exit-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C343AE9175CC02D00582627 /* exit-ipadhd.png */; };
+		2C343AEC175CC7E100582627 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C343AEB175CC7E100582627 /* exit.png */; };
+		2C467A3F1757DB3E006E8A07 /* CCSprite+rect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C467A3E1757DB3E006E8A07 /* CCSprite+rect.m */; };
+		2C467A4217580587006E8A07 /* PPPlayers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C467A4117580587006E8A07 /* PPPlayers.m */; };
+		2C5055A7175784BE006E2D0A /* racket-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5055A6175784BE006E2D0A /* racket-ipadhd.png */; };
+		2C5055A917578555006E2D0A /* ball-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5055A817578555006E2D0A /* ball-ipadhd.png */; };
+		2C8425811756477E0032193D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8425801756477E0032193D /* UIKit.framework */; };
+		2C8425831756477E0032193D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8425821756477E0032193D /* Foundation.framework */; };
+		2C8425851756477E0032193D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8425841756477E0032193D /* CoreGraphics.framework */; };
+		2C84258B1756477E0032193D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C8425891756477E0032193D /* InfoPlist.strings */; };
+		2C84258D1756477E0032193D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84258C1756477E0032193D /* main.m */; };
+		2C8425911756477F0032193D /* PPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8425901756477F0032193D /* PPAppDelegate.m */; };
+		2C8425931756477F0032193D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8425921756477F0032193D /* Default.png */; };
+		2C8425951756477F0032193D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8425941756477F0032193D /* Default@2x.png */; };
+		2C8425971756477F0032193D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8425961756477F0032193D /* Default-568h@2x.png */; };
+		2C8425AA175696550032193D /* PPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8425A9175696550032193D /* PPPlayer.m */; };
+		2CCD6A331757AF6E0055898E /* PPGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD6A321757AF6E0055898E /* PPGameScene.m */; };
+		2CE70E02175BBE9C009B2D13 /* PPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE70E01175BBE9C009B2D13 /* PPSettings.m */; };
+		2CE70E05175BBFA5009B2D13 /* PPMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE70E04175BBFA5009B2D13 /* PPMenuScene.m */; };
+		2CE70E08175BC063009B2D13 /* PPModeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE70E07175BC063009B2D13 /* PPModeLayer.m */; };
+		2CE70E0B175BC074009B2D13 /* PPDifficultyLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE70E0A175BC074009B2D13 /* PPDifficultyLayer.m */; };
+		2CFB8DF01758B7A700334102 /* PPServeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB8DEF1758B7A700334102 /* PPServeLayer.m */; };
+		2CFB8DF31758B7B500334102 /* PPScoreLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB8DF21758B7B500334102 /* PPScoreLayer.m */; };
+		6E9E509D588144D79E8244CB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4DB5AF9DAD4624A6790F01 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C3096DB1757481D00B879FB /* PPBoardLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBoardLayer.h; sourceTree = "<group>"; };
+		2C3096DC1757481D00B879FB /* PPBoardLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBoardLayer.m; sourceTree = "<group>"; };
+		2C3096DE17574D7B00B879FB /* racket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = racket.png; sourceTree = "<group>"; };
+		2C3096E3175775F900B879FB /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		2C343AE9175CC02D00582627 /* exit-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit-ipadhd.png"; sourceTree = "<group>"; };
+		2C343AEB175CC7E100582627 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
+		2C467A3D1757DB3E006E8A07 /* CCSprite+rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCSprite+rect.h"; sourceTree = "<group>"; };
+		2C467A3E1757DB3E006E8A07 /* CCSprite+rect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCSprite+rect.m"; sourceTree = "<group>"; };
+		2C467A4017580587006E8A07 /* PPPlayers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPlayers.h; sourceTree = "<group>"; };
+		2C467A4117580587006E8A07 /* PPPlayers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPlayers.m; sourceTree = "<group>"; };
+		2C5055A6175784BE006E2D0A /* racket-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "racket-ipadhd.png"; sourceTree = "<group>"; };
+		2C5055A817578555006E2D0A /* ball-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball-ipadhd.png"; sourceTree = "<group>"; };
+		2C84257D1756477E0032193D /* PingPong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8425801756477E0032193D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C8425821756477E0032193D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C8425841756477E0032193D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C8425881756477E0032193D /* PingPong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PingPong-Info.plist"; sourceTree = "<group>"; };
+		2C84258A1756477E0032193D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C84258C1756477E0032193D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C84258E1756477F0032193D /* PingPong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PingPong-Prefix.pch"; sourceTree = "<group>"; };
+		2C84258F1756477F0032193D /* PPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPAppDelegate.h; sourceTree = "<group>"; };
+		2C8425901756477F0032193D /* PPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPAppDelegate.m; sourceTree = "<group>"; };
+		2C8425921756477F0032193D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2C8425941756477F0032193D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2C8425961756477F0032193D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2C8425A8175696550032193D /* PPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPlayer.h; sourceTree = "<group>"; };
+		2C8425A9175696550032193D /* PPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPlayer.m; sourceTree = "<group>"; };
+		2CCD6A311757AF6E0055898E /* PPGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGameScene.h; sourceTree = "<group>"; };
+		2CCD6A321757AF6E0055898E /* PPGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGameScene.m; sourceTree = "<group>"; };
+		2CE70E00175BBE9C009B2D13 /* PPSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSettings.h; sourceTree = "<group>"; };
+		2CE70E01175BBE9C009B2D13 /* PPSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSettings.m; sourceTree = "<group>"; };
+		2CE70E03175BBFA5009B2D13 /* PPMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMenuScene.h; sourceTree = "<group>"; };
+		2CE70E04175BBFA5009B2D13 /* PPMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMenuScene.m; sourceTree = "<group>"; };
+		2CE70E06175BC063009B2D13 /* PPModeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPModeLayer.h; sourceTree = "<group>"; };
+		2CE70E07175BC063009B2D13 /* PPModeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPModeLayer.m; sourceTree = "<group>"; };
+		2CE70E09175BC074009B2D13 /* PPDifficultyLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDifficultyLayer.h; sourceTree = "<group>"; };
+		2CE70E0A175BC074009B2D13 /* PPDifficultyLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDifficultyLayer.m; sourceTree = "<group>"; };
+		2CFB8DEE1758B7A700334102 /* PPServeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPServeLayer.h; sourceTree = "<group>"; };
+		2CFB8DEF1758B7A700334102 /* PPServeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPServeLayer.m; sourceTree = "<group>"; };
+		2CFB8DF11758B7B500334102 /* PPScoreLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPScoreLayer.h; sourceTree = "<group>"; };
+		2CFB8DF21758B7B500334102 /* PPScoreLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPScoreLayer.m; sourceTree = "<group>"; };
+		39D828D6E0A04641B174609C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		6E4DB5AF9DAD4624A6790F01 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C84257A1756477E0032193D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8425811756477E0032193D /* UIKit.framework in Frameworks */,
+				2C8425831756477E0032193D /* Foundation.framework in Frameworks */,
+				2C8425851756477E0032193D /* CoreGraphics.framework in Frameworks */,
+				6E9E509D588144D79E8244CB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C3096DA175747FC00B879FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C3096DB1757481D00B879FB /* PPBoardLayer.h */,
+				2C3096DC1757481D00B879FB /* PPBoardLayer.m */,
+				2CFB8DEE1758B7A700334102 /* PPServeLayer.h */,
+				2CFB8DEF1758B7A700334102 /* PPServeLayer.m */,
+				2CFB8DF11758B7B500334102 /* PPScoreLayer.h */,
+				2CFB8DF21758B7B500334102 /* PPScoreLayer.m */,
+				2CE70E06175BC063009B2D13 /* PPModeLayer.h */,
+				2CE70E07175BC063009B2D13 /* PPModeLayer.m */,
+				2CE70E09175BC074009B2D13 /* PPDifficultyLayer.h */,
+				2CE70E0A175BC074009B2D13 /* PPDifficultyLayer.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2C8425741756477E0032193D = {
+			isa = PBXGroup;
+			children = (
+				2C8425861756477E0032193D /* PingPong */,
+				2C84257F1756477E0032193D /* Frameworks */,
+				2C84257E1756477E0032193D /* Products */,
+				39D828D6E0A04641B174609C /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		2C84257E1756477E0032193D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C84257D1756477E0032193D /* PingPong.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C84257F1756477E0032193D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C8425801756477E0032193D /* UIKit.framework */,
+				2C8425821756477E0032193D /* Foundation.framework */,
+				2C8425841756477E0032193D /* CoreGraphics.framework */,
+				6E4DB5AF9DAD4624A6790F01 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C8425861756477E0032193D /* PingPong */ = {
+			isa = PBXGroup;
+			children = (
+				2C84258F1756477F0032193D /* PPAppDelegate.h */,
+				2C8425901756477F0032193D /* PPAppDelegate.m */,
+				2C8425A7175696380032193D /* Models */,
+				2C84259D17565D200032193D /* Controllers */,
+				2C3096DA175747FC00B879FB /* Views */,
+				2CCD6A341757B23B0055898E /* Resources */,
+				2C8425871756477E0032193D /* Supporting Files */,
+			);
+			path = PingPong;
+			sourceTree = "<group>";
+		};
+		2C8425871756477E0032193D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C8425881756477E0032193D /* PingPong-Info.plist */,
+				2C8425891756477E0032193D /* InfoPlist.strings */,
+				2C84258C1756477E0032193D /* main.m */,
+				2C84258E1756477F0032193D /* PingPong-Prefix.pch */,
+				2C8425921756477F0032193D /* Default.png */,
+				2C8425941756477F0032193D /* Default@2x.png */,
+				2C8425961756477F0032193D /* Default-568h@2x.png */,
+				2C467A3D1757DB3E006E8A07 /* CCSprite+rect.h */,
+				2C467A3E1757DB3E006E8A07 /* CCSprite+rect.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C84259D17565D200032193D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CE70E03175BBFA5009B2D13 /* PPMenuScene.h */,
+				2CE70E04175BBFA5009B2D13 /* PPMenuScene.m */,
+				2CCD6A311757AF6E0055898E /* PPGameScene.h */,
+				2CCD6A321757AF6E0055898E /* PPGameScene.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2C8425A7175696380032193D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C8425A8175696550032193D /* PPPlayer.h */,
+				2C8425A9175696550032193D /* PPPlayer.m */,
+				2C467A4017580587006E8A07 /* PPPlayers.h */,
+				2C467A4117580587006E8A07 /* PPPlayers.m */,
+				2CE70E00175BBE9C009B2D13 /* PPSettings.h */,
+				2CE70E01175BBE9C009B2D13 /* PPSettings.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2CCD6A341757B23B0055898E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C343AEB175CC7E100582627 /* exit.png */,
+				2C343AE9175CC02D00582627 /* exit-ipadhd.png */,
+				2C3096E3175775F900B879FB /* ball.png */,
+				2C5055A817578555006E2D0A /* ball-ipadhd.png */,
+				2C3096DE17574D7B00B879FB /* racket.png */,
+				2C5055A6175784BE006E2D0A /* racket-ipadhd.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C84257C1756477E0032193D /* PingPong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C84259A1756477F0032193D /* Build configuration list for PBXNativeTarget "PingPong" */;
+			buildPhases = (
+				F143EBB5926E4E189C07EF42 /* Check Pods Manifest.lock */,
+				2C8425791756477E0032193D /* Sources */,
+				2C84257A1756477E0032193D /* Frameworks */,
+				2C84257B1756477E0032193D /* Resources */,
+				91C5499730A94EF0812529BA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PingPong;
+			productName = PingPong;
+			productReference = 2C84257D1756477E0032193D /* PingPong.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C8425751756477E0032193D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Marcus Brissman";
+			};
+			buildConfigurationList = 2C8425781756477E0032193D /* Build configuration list for PBXProject "PingPong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C8425741756477E0032193D;
+			productRefGroup = 2C84257E1756477E0032193D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C84257C1756477E0032193D /* PingPong */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C84257B1756477E0032193D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C84258B1756477E0032193D /* InfoPlist.strings in Resources */,
+				2C8425931756477F0032193D /* Default.png in Resources */,
+				2C8425951756477F0032193D /* Default@2x.png in Resources */,
+				2C8425971756477F0032193D /* Default-568h@2x.png in Resources */,
+				2C3096DF17574D7B00B879FB /* racket.png in Resources */,
+				2C3096E4175775F900B879FB /* ball.png in Resources */,
+				2C5055A7175784BE006E2D0A /* racket-ipadhd.png in Resources */,
+				2C5055A917578555006E2D0A /* ball-ipadhd.png in Resources */,
+				2C343AEA175CC02D00582627 /* exit-ipadhd.png in Resources */,
+				2C343AEC175CC7E100582627 /* exit.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91C5499730A94EF0812529BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		F143EBB5926E4E189C07EF42 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C8425791756477E0032193D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C84258D1756477E0032193D /* main.m in Sources */,
+				2C8425911756477F0032193D /* PPAppDelegate.m in Sources */,
+				2C8425AA175696550032193D /* PPPlayer.m in Sources */,
+				2C3096DD1757481D00B879FB /* PPBoardLayer.m in Sources */,
+				2CCD6A331757AF6E0055898E /* PPGameScene.m in Sources */,
+				2C467A3F1757DB3E006E8A07 /* CCSprite+rect.m in Sources */,
+				2C467A4217580587006E8A07 /* PPPlayers.m in Sources */,
+				2CFB8DF01758B7A700334102 /* PPServeLayer.m in Sources */,
+				2CFB8DF31758B7B500334102 /* PPScoreLayer.m in Sources */,
+				2CE70E02175BBE9C009B2D13 /* PPSettings.m in Sources */,
+				2CE70E05175BBFA5009B2D13 /* PPMenuScene.m in Sources */,
+				2CE70E08175BC063009B2D13 /* PPModeLayer.m in Sources */,
+				2CE70E0B175BC074009B2D13 /* PPDifficultyLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C8425891756477E0032193D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C84258A1756477E0032193D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C8425981756477F0032193D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		2C8425991756477F0032193D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C84259B1756477F0032193D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D828D6E0A04641B174609C /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PingPong/PingPong-Prefix.pch";
+				INFOPLIST_FILE = "PingPong/PingPong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C84259C1756477F0032193D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D828D6E0A04641B174609C /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PingPong/PingPong-Prefix.pch";
+				INFOPLIST_FILE = "PingPong/PingPong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C8425781756477E0032193D /* Build configuration list for PBXProject "PingPong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8425981756477F0032193D /* Debug */,
+				2C8425991756477F0032193D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C84259A1756477F0032193D /* Build configuration list for PBXNativeTarget "PingPong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C84259B1756477F0032193D /* Debug */,
+				2C84259C1756477F0032193D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C8425751756477E0032193D /* Project object */;
+}
