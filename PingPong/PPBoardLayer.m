@@ -43,6 +43,7 @@ typedef enum{
 	BOOL automaticEnemy;
 }
 
+/* Identifying the server racket */
 - (CCSprite *)serverRacket
 {
 	CCSprite *racket;
@@ -55,6 +56,7 @@ typedef enum{
 	return racket;
 }
 
+/* Function called on every frame if game is running */
 - (void)step
 {
 	// Check if ball hit wall or racket
@@ -68,7 +70,7 @@ typedef enum{
 	}
 	else if (CGRectIntersectsRect([ball rect], rightWall) || CGRectIntersectsRect([ball rect], leftWall))
 	{
-		[self ballHitObject:kHitObject_Wall];
+		[self ballHitWall];
 	}
 	else if (!CGRectIntersectsRect([ball rect], CGRectMake(0, 0, winSize.width, winSize.height)))
 	{
@@ -79,12 +81,13 @@ typedef enum{
 		onHitObject = false;
 	}
 	
-	// Move enemu racket if single player
+	// Move enemy racket if single player
 	if ([self mode] == kPPMode_SinglePlayer) {
 		[self moveRacket:racket2 toX:ball.position.x];
 	}
 }
 
+/* Function used to limit speed of enemy racket */
 - (void)moveRacket:(CCSprite *)racket toX:(NSInteger)x
 {
 	[racket stopAllActions];
@@ -100,48 +103,28 @@ typedef enum{
 	racket.position = ccp(racket.position.x + moveBy, racket.position.y);
 }
 
+
 #pragma mark - Situations
 
-- (void)ballHitObject:(kHitObject)hitObject
+- (void)ballHitWall
 {
-	if(onHitObject)
-		return;
-	
-	onHitObject = true;
-
-	[ball stopAllActions];
-	CGPoint direction;
-	switch (hitObject) {
-		case kHitObject_Wall:
-			// Ball hit a wall - reverse X of direction
-			direction = CGPointMake(-(currentDirection.x), currentDirection.y);
-			break;
-			
-		default:
-			// Ball hit a racket - reverse Y of direction
-			direction = CGPointMake(currentDirection.x, -(currentDirection.y));
-			break;
-	}
+	// Changing direction - reverses x
+	CGPoint direction = CGPointMake(-(currentDirection.x), currentDirection.y);
 	
 	[self hitBallWithDirection:direction];
 }
 
 - (void)ballHitRacket:(CCSprite *)racket
 {
-	if(onHitObject)
-		return;
-	
-	onHitObject = true;
-	
-	[ball stopAllActions];
-	
+	// Changing direction - reverses y
 	CGPoint direction = CGPointMake(currentDirection.x, -(currentDirection.y));
-	int hitX = ball.position.x - racket.position.x;
-	direction = ccp(direction.x + hitX * 2, direction.y);
+	
+	// Adds some extra x depending of where the ball hits the racket
+	int extraX = ball.position.x - racket.position.x;
+	direction = ccp(direction.x + extraX * 2, direction.y);
 	
 	[self hitBallWithDirection:direction];	
 }
-
 
 - (void)goal
 {	
@@ -157,6 +140,7 @@ typedef enum{
 	
 	serverIndex = playerIndex;
 	
+	// Tells the scene that controls the game
 	if ([self.delegate respondsToSelector:@selector(boardLayer:goalByPlayerAtIndex:)]) {
         [self.delegate boardLayer:self goalByPlayerAtIndex:playerIndex];
     }
@@ -169,6 +153,13 @@ typedef enum{
 
 - (void)hitBallWithDirection:(CGPoint)direction
 {
+	if(onHitObject)
+		return;
+	
+	onHitObject = true;
+	
+	[ball stopAllActions];
+	
 	// Sets duration using direction for ball animation
 	double distance = sqrt(pow(direction.x - 0, 2) + pow(direction.y - 0, 2));
 	double duration = distance * ballSpeed;
@@ -186,7 +177,7 @@ typedef enum{
 	}
 	
 	isRunning = true;
-	
+		
 	CCSprite *racket = [self serverRacket];
 	CGPoint direction = ccp(point.x - racket.position.x, point.y - racket.position.y);
 	
