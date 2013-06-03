@@ -4,4 +4,4 @@ Ping-Pong
 Ping pong game made with Cocos2D
 
 - Open the workspace in XCode
-- Make sure to set Ping Pong-project as the active scheme before you run it
+- Make sure that you run the Ping Pong-project and NOT the Pod-project
