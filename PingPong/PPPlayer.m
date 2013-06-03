@@ -19,7 +19,7 @@
 {
 	self = [super init];
     if (self) {
-		_isAutomatic = false;
+		_score = 0;
     }
     return self;
 }

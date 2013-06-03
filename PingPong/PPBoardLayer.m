@@ -136,12 +136,8 @@ typedef enum{
 	[ball stopAllActions];
 	
 	CGPoint direction = CGPointMake(currentDirection.x, -(currentDirection.y));
-	
 	int hitX = ball.position.x - racket.position.x;
-	
-	
 	direction = ccp(direction.x + hitX * 2, direction.y);
-	NSLog(@"%f", direction.x);
 	
 	[self hitBallWithDirection:direction];	
 }
